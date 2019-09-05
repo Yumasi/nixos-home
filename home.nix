@@ -1,39 +1,84 @@
 { config, pkgs, ... }:
-
 {
-  home.packages = with pkgs; [
-    # WM tools
-    alacritty
-    rofi
+    home.packages = with pkgs; [
+        # ACU
+        fira
+        fira-code
+        fira-mono
 
-    # CLI tools
-    bat
-    exa
-    file
-    fzf
-    htop
-    manpages
-    ripgrep
-    tree
-    unzip
-    zip
+        # WM tools
+        alacritty
+        rofi
 
-    # desktop
-    chromium
-  ];
+        # Fonts
+        nerdfonts
 
-  programs.git = {
-    enable = true;
-    package = gitAndTools.gitFull;
-    userEmail = "guillaume.pagnoux@lse.epita.fr";
-    userName = "Guillaume Pagnoux";
-  };
+        # dev tools
+        (lib.hiPrio gcc)
+        (lib.lowPrio clang)
+        bear
+        cmake
+        gdb
+        gnumake
+        rustup
 
-  programs.home-manager.enable = true;
+        # i3
+        i3blocks
+        acpi
 
-  services.redshift = {
-    enable = true;
-    latitude = "48.853";
-    longitude = "2.35";
-  };
+        # Python
+        python3
+
+        # CLI tools
+        bat
+        exa
+        fd
+        file
+        fzf
+        gitAndTools.tig
+        htop
+        iftop
+        iotop
+        manpages
+        ripgrep
+        tree
+        unzip
+        xclip
+        zip
+
+        # desktop
+        chromium
+        discord
+        slack
+        virtmanager
+
+        # Emacs dependencies
+        ccls
+        editorconfig-core-c
+        shellcheck
+    ];
+
+    programs.emacs = {
+        enable = true;
+    };
+
+    programs.git = {
+        enable = true;
+        package = pkgs.gitAndTools.gitFull;
+        userEmail = "guillaume.pagnoux@epita.fr";
+        userName = "Guillaume Pagnoux";
+    };
+
+    programs.home-manager.enable = true;
+
+    services.redshift = {
+        enable = true;
+        latitude = "48.853";
+        longitude = "2.35";
+        temperature.night = 3000;
+    };
+
+    home.file.".config/i3/config".source = ./configs/i3_config;
+    home.file.".config/alacritty/alacritty.yml".source = ./configs/alacritty.yml;
+    home.file.".local/share/rofi/themes/base16-dracula.rasi".source = ./configs/rofi_theme;
 }
