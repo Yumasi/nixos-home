@@ -2,6 +2,7 @@
 {
     imports = [
         ./mail.nix
+        ./zsh.nix
     ];
 
     home.packages = with pkgs; [
