@@ -28,6 +28,16 @@ bindkey '^ ' autosuggest-accept
                 };
                 file = "spaceship.zsh";
             }
+            {
+                name = "formarks";
+                src = fetchFromGitHub {
+                    owner = "wfxr";
+                    repo = "formarks";
+                    rev = "8abce138218a8e6acd3c8ad2dd52550198625944";
+                    sha256 = "1wr4ypv2b6a2w9qsia29mb36xf98zjzhp3bq4ix6r3cmra3xij90";
+                };
+                file = "formarks.plugin.zsh";
+            }
         ];
     };
 
