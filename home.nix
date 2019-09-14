@@ -5,6 +5,7 @@
         fira
         fira-code
         fira-mono
+        texlive.combined.scheme-full
 
         # WM tools
         alacritty
@@ -18,6 +19,7 @@
         (lib.lowPrio clang)
         bear
         cmake
+        ctags
         gdb
         gnumake
         rustup
@@ -39,6 +41,7 @@
         htop
         iftop
         iotop
+        ldns
         manpages
         ripgrep
         tree
@@ -47,20 +50,26 @@
         zip
 
         # desktop
+        arandr
         chromium
         discord
+        evince
+        pavucontrol
         slack
         virtmanager
+        wpa_supplicant_gui
 
         # Emacs dependencies
         ccls
         editorconfig-core-c
         shellcheck
+
+        # Presentations tools
+        screenkey
     ];
 
-    programs.emacs = {
-        enable = true;
-    };
+    programs.emacs.enable = true;
+    programs.gpg.enable = true;
 
     programs.git = {
         enable = true;
