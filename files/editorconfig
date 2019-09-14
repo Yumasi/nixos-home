@@ -1,0 +1,30 @@
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.S]
+indent_style = tab
+indent_size = 8
+
+[*.{c,h}]
+indent_style = tab
+indent_size = 8
+
+[*.{cc,hh,cxx,hxx}]
+indent_style = space
+indent_size = 4
+
+[Makefile]
+indent_style = tab
+indent_size = 8
+
+[CMakeLists.txt]
+indent_style = space
+indent_size = 2
+
+[*.rst]
+indent_style = space
+indent_size = 2

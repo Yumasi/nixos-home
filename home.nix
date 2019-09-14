@@ -89,5 +89,6 @@
 
     home.file.".config/i3/config".source = ./files/i3_config;
     home.file.".config/alacritty/alacritty.yml".source = ./files/alacritty.yml;
+    home.file.".editorconfig".source = ./files/editorconfig;
     home.file.".local/share/rofi/themes/base16-dracula.rasi".source = ./files/rofi_theme;
 }
