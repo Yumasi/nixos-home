@@ -1,5 +1,9 @@
 { config, pkgs, ... }:
 {
+    imports = [
+        ./mail.nix
+    ];
+
     home.packages = with pkgs; [
         # ACU
         fira
