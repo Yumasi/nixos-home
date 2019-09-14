@@ -87,7 +87,7 @@
         temperature.night = 3000;
     };
 
-    home.file.".config/i3/config".source = ./configs/i3_config;
-    home.file.".config/alacritty/alacritty.yml".source = ./configs/alacritty.yml;
-    home.file.".local/share/rofi/themes/base16-dracula.rasi".source = ./configs/rofi_theme;
+    home.file.".config/i3/config".source = ./files/i3_config;
+    home.file.".config/alacritty/alacritty.yml".source = ./files/alacritty.yml;
+    home.file.".local/share/rofi/themes/base16-dracula.rasi".source = ./files/rofi_theme;
 }
