@@ -1,0 +1,6 @@
+[submodule "overlays/acu"]
+	path = overlays/acu
+	url = git@github.com:multun/acu-nix.git
+[submodule "overlays/yumasi"]
+	path = overlays/yumasi
+	url = git@github.com:Yumasi/nix-overlay.git
