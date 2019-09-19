@@ -82,6 +82,14 @@
         package = pkgs.gitAndTools.gitFull;
         userEmail = "guillaume.pagnoux@epita.fr";
         userName = "Guillaume Pagnoux";
+        ignores = [
+                "*~"
+                "*.swp"
+                ".ccls-cache"
+                "*.pdf"
+                "compile_commands.json"
+                "shell.nix"
+        ];
     };
 
     programs.home-manager.enable = true;
