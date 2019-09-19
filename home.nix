@@ -47,6 +47,7 @@
         iftop
         iotop
         ldns
+        ltrace
         manpages
         ripgrep
         tree
