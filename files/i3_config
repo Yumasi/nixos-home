@@ -2,7 +2,7 @@
 set $mod Mod4
 
 font pango:Iosevka Nerd Font 8
-exec --no-startup-id feh --bg-fill ~/.config/i3/wallpaper.jpg
+exec --no-startup-id feh --bg-fill ~/.config/i3/wallpaper
 exec --no-startup-id setxkbmap -option caps:escape
 
 # Use Mouse+$mod to drag floating windows to their wanted position

@@ -60,6 +60,7 @@
         chromium
         discord
         evince
+        feh
         pavucontrol
         slack
         virtmanager
@@ -102,6 +103,7 @@
     };
 
     home.file.".config/i3/config".source = ./files/i3_config;
+    home.file.".config/i3/wallpaper".source = ./files/wallpaper.jpg;
     home.file.".config/alacritty/alacritty.yml".source = ./files/alacritty.yml;
     home.file.".editorconfig".source = ./files/editorconfig;
     home.file.".local/share/rofi/themes/base16-dracula.rasi".source = ./files/rofi_theme;
