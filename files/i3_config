@@ -4,6 +4,13 @@ set $mod Mod4
 font pango:Iosevka Nerd Font 8
 exec --no-startup-id feh --bg-fill ~/.config/i3/wallpaper
 exec --no-startup-id setxkbmap -option caps:escape
+exec --no-startup-id slack
+exec --no-startup-id wpa_gui -t
+exec --no-startup-id xset r rate 200 60
+
+# Window assignments
+assign [class="Slack"] $ws9
+for_window [class="spotify"] move to workspace $ws10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -31,12 +38,12 @@ bar {
     binding_mode       #FF5555 #FF5555 #F8F8F2
   }
 
-  status_command i3blocks
+  status_command i3status-rs ~/.config/i3/bar
 }
 
 ## Keybindings ##
 # Volume buttons
-bindsym XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 5%+ && pkill -RTMIN+1 i3blocks 
+bindsym XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 5%+ && pkill -RTMIN+1 i3blocks
 bindsym XF86AudioLowerVolume exec amixer -q -D pulse sset Master 5%- && pkill -RTMIN+1 i3blocks
 bindsym XF86AudioMute exec amixer -q -D pulse sset Master toggle && pkill -RTMIN+1 i3blocks
 
@@ -85,16 +92,16 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1"
-set $ws2 "2"
+set $ws1 "1: "
+set $ws2 "2: "
 set $ws3 "3"
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
+set $ws9 "9: 聆"
+set $ws10 "10: "
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
