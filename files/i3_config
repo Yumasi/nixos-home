@@ -42,6 +42,9 @@ bar {
 }
 
 ## Keybindings ##
+# Lock
+bindsym $mod+Ctrl+l exec i3lock-fancy
+
 # Volume buttons
 bindsym XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 5%+ && pkill -RTMIN+1 i3blocks
 bindsym XF86AudioLowerVolume exec amixer -q -D pulse sset Master 5%- && pkill -RTMIN+1 i3blocks

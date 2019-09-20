@@ -31,6 +31,7 @@
 
         # i3
         acpi
+        i3lock-fancy
         i3status-rust
 
         # Python
