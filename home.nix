@@ -50,6 +50,7 @@
         ldns
         ltrace
         manpages
+        nixops
         ripgrep
         tree
         unzip
