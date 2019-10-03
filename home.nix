@@ -132,7 +132,7 @@
                                 alignment = "left";
                                 bounce_freq = 0;
                                 font = "Iosevka Nerd Font 9";
-                                format = "<b>%a</b> - <i>%s</i>\\n%p %b";
+                                format = "<b>%s</b>\\n%p %b";
                                 frame_width = 2;
                                 geometry = "300x5-30+50";
                                 horizontal_padding = 4;
