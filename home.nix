@@ -86,10 +86,13 @@
                         theme = "TwoDark";
                 };
         };
+
         programs.direnv = {
                 enable = true;
         };
+
         programs.emacs.enable = true;
+
         programs.git = {
                 enable = true;
                 package = pkgs.gitAndTools.gitFull;
@@ -104,11 +107,21 @@
                         "shell.nix"
                 ];
         };
+
         programs.gpg.enable = true;
         programs.home-manager.enable = true;
+
         programs.ssh = {
                 enable = true;
                 compression = true;
+                forwardAgent = true;
+
+                matchBlocks = {
+                        "aiur" = {
+                                hostname = "163.5.55.18";
+                                port = 43092;
+                        };
+                };
         };
 
         services.dunst = {
@@ -133,18 +146,21 @@
                                 sort = true;
                                 word_wrap = true;
                         };
+
                         urgency_low = {
                                 background = "#1a1a1a";
                                 foreground = "#b8b8b8";
                                 frame_color = "#3d99ba";
                                 timeout = 10;
                         };
+
                         urgency_normal = {
                                 background = "#1a1a1a";
                                 foreground = "#b8b8b8";
                                 frame_color = "#015b82";
                                 timeout = 10;
                         };
+
                         urgency_critical = {
                                 background = "#1a1a1a";
                                 foreground = "#b8b8b8";
@@ -153,16 +169,19 @@
                         };
                 };
         };
+
         services.gpg-agent = {
                 enable = true;
                 enableSshSupport = true;
         };
+
         services.redshift = {
                 enable = true;
                 latitude = "48.853";
                 longitude = "2.35";
                 temperature.night = 3000;
         };
+
         services.unclutter.enable = true;
 
         home.file.".config/i3/config".source = ./files/i3_config;
