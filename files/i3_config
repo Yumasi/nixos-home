@@ -43,7 +43,7 @@ bar {
 
 ## Keybindings ##
 # Lock
-bindsym $mod+Ctrl+l exec i3lock-fancy
+bindsym $mod+Ctrl+l exec i3lock-fancy && xset dpms force off
 
 # Volume buttons
 bindsym XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 5%+ && pkill -RTMIN+1 i3blocks

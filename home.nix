@@ -187,6 +187,10 @@
                 temperature.night = 3000;
                 temperature.day = 5000;
         };
+
+        services.screen-locker = {
+                enable = true;
+                lockCmd = "\${pkgs.i3lock-fancy}/bin/i3lock-fancy";
         };
 
         services.unclutter.enable = true;
