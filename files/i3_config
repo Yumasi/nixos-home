@@ -9,6 +9,7 @@ exec --no-startup-id wpa_gui -t
 exec --no-startup-id xset r rate 200 60
 
 # Window assignments
+assign [class="Chromium"] $ws2
 assign [class="Slack"] $ws9
 for_window [class="spotify"] move to workspace $ws10
 
