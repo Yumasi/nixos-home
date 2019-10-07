@@ -121,6 +121,11 @@
                                 hostname = "163.5.55.18";
                                 port = 43092;
                         };
+
+                        "build" = {
+                                hostname = "build";
+                                user = "pagnoux";
+                        };
                 };
         };
 
