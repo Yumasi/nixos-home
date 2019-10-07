@@ -49,6 +49,7 @@
                 ldns
                 ltrace
                 manpages
+                nix-index
                 nixops
                 nox
                 ripgrep
