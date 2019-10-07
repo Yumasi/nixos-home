@@ -136,7 +136,7 @@
                                 allow_markup = true;
                                 alignment = "left";
                                 bounce_freq = 0;
-                                font = "Iosevka Nerd Font 9";
+                                font = "Iosevka Nerd Font 10";
                                 format = "<b>%s</b>\\n%p %b";
                                 frame_width = 2;
                                 geometry = "300x5-30+50";
