@@ -185,6 +185,8 @@
                 latitude = "48.853";
                 longitude = "2.35";
                 temperature.night = 3000;
+                temperature.day = 5000;
+        };
         };
 
         services.unclutter.enable = true;
