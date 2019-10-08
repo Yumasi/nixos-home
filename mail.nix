@@ -49,4 +49,5 @@
 
   home.file.".mail/gmail.gpg".source = ./files/pass/gmail.gpg;
   home.file.".mail/lse.gpg".source = ./files/pass/lse.gpg;
+  home.file.".signature".source = ./files/signature;
 }
