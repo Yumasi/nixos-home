@@ -1,4 +1,7 @@
 { config, pkgs, ... }:
+let
+        editor = "vim";
+in
 {
         imports = [
                 ./mail.nix
@@ -205,4 +208,8 @@
         home.file.".config/alacritty/alacritty.yml".source = ./files/alacritty.yml;
         home.file.".editorconfig".source = ./files/editorconfig;
         home.file.".local/share/rofi/themes/base16-dracula.rasi".source = ./files/rofi_theme;
+
+        home.sessionVariables = {
+                EDITOR = "${editor}";
+        };
 }
