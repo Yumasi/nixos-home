@@ -15,7 +15,14 @@
 
       mbsync = {
         enable = true;
-        create = "maildir";
+        create = "both";
+        expunge = "both";
+        remove = "both";
+
+        patterns = [
+          "*"
+          "![Gmail]*"
+        ];
       };
       passwordCommand = "gpg -q --decrypt ~/.mail/gmail.gpg";
 
