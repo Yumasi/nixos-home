@@ -41,6 +41,7 @@ in
                 python3
 
                 # CLI tools
+                _1password
                 exa
                 fd
                 file
@@ -77,6 +78,7 @@ in
                 # Emacs dependencies
                 ccls
                 editorconfig-core-c
+                nixfmt
                 shellcheck
 
                 # Presentations tools
