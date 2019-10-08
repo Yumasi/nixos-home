@@ -99,6 +99,9 @@
                 package = pkgs.gitAndTools.gitFull;
                 userEmail = "guillaume.pagnoux@epita.fr";
                 userName = "Guillaume Pagnoux";
+                signing.key = "EC5065899AEAAF4C";
+                signing.signByDefault = true;
+
                 ignores = [
                         "*~"
                         "*.swp"
