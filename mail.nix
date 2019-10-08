@@ -17,11 +17,13 @@
         enable = true;
         create = "maildir";
       };
-      passwordCommand = "gpg -q --decrypt ~/Maildir/gmail/pass.gpg";
+      passwordCommand = "gpg -q --decrypt ~/.mail/gmail.gpg";
 
       msmtp = {
         enable = true;
       };
     };
   };
+
+  home.file.".mail/gmail.gpg".source = ./files/pass/gmail.gpg;
 }
