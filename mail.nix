@@ -30,7 +30,23 @@
         enable = true;
       };
     };
+
+    "lse" = {
+      address = "guillaume.pagnoux@lse.epita.fr";
+      realName = "Guillaume Pagnoux";
+      userName = "pagnou_g";
+
+      msmtp.enable = true;
+      msmtp.extraConfig = { auth = "plain"; };
+      smtp = {
+        host = "mail.cri.epita.fr";
+        port = 587;
+        tls.useStartTls = true;
+      };
+      passwordCommand = "gpg -q --decrypt ~/.mail/lse.gpg";
+    };
   };
 
   home.file.".mail/gmail.gpg".source = ./files/pass/gmail.gpg;
+  home.file.".mail/lse.gpg".source = ./files/pass/lse.gpg;
 }
