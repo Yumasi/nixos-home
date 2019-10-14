@@ -73,6 +73,7 @@ in
                 slack
                 spotify
                 virtmanager
+                vivaldi
                 wpa_supplicant_gui
 
                 # Emacs dependencies
