@@ -5,6 +5,7 @@ in
 {
         imports = [
                 ./mail.nix
+                ./vim.nix
                 ./zsh.nix
         ];
 
