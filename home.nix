@@ -213,7 +213,7 @@ in
         services.unclutter.enable = true;
 
         home.file.".config/i3/config".source = ./files/i3_config;
-        home.file.".config/i3/bar".source = ./files/i3status_rs.toml;
+        home.file.".config/i3/bar".source = ./files/i3status_rs + ".${settings.flavour}.toml" ;
         home.file.".config/i3/wallpaper".source = ./files/wallpaper.jpg;
         home.file.".config/alacritty/alacritty.yml".source = ./files/alacritty.yml;
         home.file.".editorconfig".source = ./files/editorconfig;
