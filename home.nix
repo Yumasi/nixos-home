@@ -215,5 +215,6 @@ in
 
         home.sessionVariables = {
                 EDITOR = "${editor}";
+                PATH = "$HOME/.emacs.d/bin:$PATH";
         };
 }
