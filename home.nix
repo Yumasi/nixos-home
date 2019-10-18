@@ -79,6 +79,10 @@ in
                 wpa_supplicant_gui
 
                 # Emacs dependencies
+                aspell
+                aspellDicts.en
+                aspellDicts.en-computers
+                aspellDicts.fr
                 ccls
                 editorconfig-core-c
                 nixfmt
