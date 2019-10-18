@@ -1,5 +1,6 @@
 { config, pkgs, ... }:
 let
+        settings = import ./config;
         editor = "vim";
 in
 {
