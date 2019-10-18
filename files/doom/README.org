@@ -1,0 +1,9 @@
+#+TITLE:   Yumasi's doom Emacs configuration
+#+DATE:    April 17, 2019
+
+* Table of Contents :TOC_3:noexport:
+- [[#description][Description]]
+
+* Description
+
+This is my personal Doom Emacs' based configuration.
