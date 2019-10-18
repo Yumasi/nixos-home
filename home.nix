@@ -144,6 +144,8 @@ in
                                 user = "pagnoux";
                         };
                 };
+
+                extraConfig = ''AddKeysToAgent yes'';
         };
 
         services.dunst = {
