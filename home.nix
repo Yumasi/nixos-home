@@ -104,7 +104,7 @@ in
         programs.git = {
                 enable = true;
                 package = pkgs.gitAndTools.gitFull;
-                userEmail = "guillaume.pagnoux@epita.fr";
+                userEmail = "guillaume.pagnoux@lse.epita.fr";
                 userName = "Guillaume Pagnoux";
                 signing.key = "EC5065899AEAAF4C";
                 signing.signByDefault = true;
