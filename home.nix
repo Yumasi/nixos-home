@@ -58,6 +58,7 @@ in
                 nixops
                 nox
                 ripgrep
+                sshfs
                 tree
                 unzip
                 xclip
