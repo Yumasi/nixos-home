@@ -31,8 +31,11 @@ in
                 cmake
                 ctags
                 gdb
+                gitAndTools.tig
                 gnumake
                 rustup
+                vagrant
+                valgrind
 
                 # i3
                 acpi
@@ -48,7 +51,6 @@ in
                 fd
                 file
                 fzf
-                gitAndTools.tig
                 htop
                 iftop
                 iotop
