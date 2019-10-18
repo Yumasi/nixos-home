@@ -16,18 +16,22 @@
 
         initExtra = ''
 bindkey '^ ' autosuggest-accept
+AGKOZAK_COLORS_PROMPT_CHAR='magenta'
+AGKOZAK_CUSTOM_SYMBOLS=( '⇣⇡' '⇣' '⇡' '+' 'x' '!' '>' '?' )
+AGKOZAK_MULTILINE=0
+AGKOZAK_PROMPT_CHAR=( ❯ ❯ ❮ )
                         '';
 
         plugins = with pkgs; [
             {
-                name = "spaceship-prompt";
+                name = "agkozak-zsh-prompt";
                 src = fetchFromGitHub {
-                    owner = "denysdovhan";
-                    repo = "spaceship-prompt";
-                    rev = "v3.11.2";
-                    sha256 = "1q7m9mmg82n4fddfz01y95d5n34xnzhrnn1lli0vih39sgmzim9b";
+                    owner = "agkozak";
+                    repo = "agkozak-zsh-prompt";
+                    rev = "v3.3.0";
+                    sha256 = "0f8v1ih4205lgghcssbvb3clpymjj2f134cab5vrggdaapcs10xq";
                 };
-                file = "spaceship.zsh";
+                file = "agkozak-zsh-prompt.plugin.zsh";
             }
             {
                 name = "formarks";
