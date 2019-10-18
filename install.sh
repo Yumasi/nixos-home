@@ -53,5 +53,65 @@ link_config() {
     success "-> Configuration successfully linked!"
 }
 
-update_submodules
+set_perm() {
+    chmod "$2" "$1" && success "--> Set permission of $1 to $2"
+}
+
+get_doc() {
+    info "-> Fetching $1"
+    op get document "$1" > "$2"
+    set_perm "$2" "$3"
+}
+
+get_ssh() {
+    mkdir -p "$HOME/.ssh" && info "-> Ensuring .ssh folder is present"
+    chmod 700 "$HOME/.ssh" && success '--> Setting permissions for the .ssh folder'
+
+    get_doc 'SSH Public Key' "$HOME/.ssh/id_rsa.pub" 644
+    get_doc 'SSH Private Key' "$HOME/.ssh/id_rsa" 600
+
+    mkdir -p "$HOME/.gnupg" && info "-> Ensuring .gnupg folder is present"
+    chmod 700 "$HOME/.gnupg" && success '--> Setting permissions for the .gnupg folder'
+}
+
+get_gpg() {
+    mkdir -p "$HOME/.gnupg" && info "-> Ensuring .gnupg folder is present"
+    chmod 700 "$HOME/.gnupg" && success '--> Setting permissions for the .gnupg folder'
+
+    info "-> Importing private GPG key"
+    op get document 'GPG Private Key' | gpg --import -q && success '--> Successfully imported GPG key'
+}
+
+get_creds() {
+    local domain
+    local email
+    local secret
+
+    read -p 'Enter your 1password domain: ' domain
+    read -p 'Enter your 1password email: ' email
+    read -p 'Enter your 1password secret key: ' secret
+
+    info "[+] Fetching secrets from 1password"
+
+    eval "$(op signin ${domain} ${email} ${secret})"
+
+    get_ssh
+    get_gpg
+}
+
+# -------------------------------------------------------------------------------
+
+clone() {
+
+}
+
+setup_project_dir() {
+
+}
+
+# -------------------------------------------------------------------------------
+
 link_config
+get_creds
+update_submodules
+setup_project_dir
