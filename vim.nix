@@ -8,5 +8,9 @@
     plugins = with pkgs.vimPlugins; [
       vim-nix
     ];
+
+    extraConfig = ''
+                set cc=80
+    '';
   };
 }
