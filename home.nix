@@ -204,6 +204,7 @@ in
         services.gpg-agent = {
                 enable = true;
                 enableSshSupport = true;
+                extraConfig = "pinentry-program ${pkgs.pinentry-qt}/bin/pinentry";
         };
 
         services.redshift = {
