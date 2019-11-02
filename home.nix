@@ -65,6 +65,7 @@ in
                 nixops
                 nox
                 ripgrep
+                scrot
                 sshfs
                 tree
                 unzip
