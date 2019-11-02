@@ -44,6 +44,10 @@ in
 
                 # Python
                 python3
+                python3Packages.python-language-server
+                python3Packages.pyls-black
+                python3Packages.pyls-isort
+                python3Packages.pyls-mypy
 
                 # CLI tools
                 _1password
