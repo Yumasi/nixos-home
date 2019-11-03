@@ -84,6 +84,7 @@ in
                 spotify
                 virtmanager
                 vivaldi
+                vlc
                 wpa_supplicant_gui
 
                 # Emacs dependencies
