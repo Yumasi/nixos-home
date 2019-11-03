@@ -34,6 +34,8 @@ in
                 gdb
                 gitAndTools.tig
                 gnumake
+                meson
+                ninja
                 rr
                 rustup
                 vagrant
