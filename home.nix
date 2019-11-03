@@ -22,7 +22,7 @@ in
                 rofi
 
                 # Fonts
-                nerdfonts
+                iosevka-nerd
 
                 # dev tools
                 (lib.hiPrio gcc)
