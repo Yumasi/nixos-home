@@ -28,6 +28,7 @@ in
                 (lib.hiPrio gcc)
                 (lib.lowPrio clang)
                 bear
+                binutils
                 cmake
                 ctags
                 gdb
