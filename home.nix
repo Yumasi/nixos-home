@@ -122,6 +122,21 @@ in
                 signing.key = "EC5065899AEAAF4C";
                 signing.signByDefault = true;
 
+                extraConfig = {
+                        core = {
+                                whitespace = "trailing-space,space-before-tab";
+                        };
+                        merge = {
+                                ff = "only";
+                        };
+                        rerere = {
+                                enabled = "true";
+                        };
+                        rebase = {
+                                autoSquash = "true";
+                        };
+                };
+
                 ignores = [
                         "*~"
                         "*.swp"
