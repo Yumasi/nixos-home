@@ -33,6 +33,7 @@ in
                 gdb
                 gitAndTools.tig
                 gnumake
+                rr
                 rustup
                 vagrant
                 valgrind
