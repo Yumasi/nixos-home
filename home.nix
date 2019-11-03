@@ -254,7 +254,6 @@ in
         home.file.".doom.d/+gnus.el".source = ./files/doom/+gnus.el;
         home.file.".doom.d/+org.el".source = ./files/doom/+org.el;
         home.file.".doom.d/config.el".source = ./files/doom/config + ".${settings.flavour}.el";
-        home.file.".doom.d/custom.el".source = ./files/doom/custom.el;
         home.file.".doom.d/init.el".source = ./files/doom/init.el;
         home.file.".doom.d/packages.el".source = ./files/doom/packages.el;
 

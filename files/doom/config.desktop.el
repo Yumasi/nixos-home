@@ -37,4 +37,3 @@
 (load! "+org")
 
 (setq custom-file "~/.doom.d/custom.el")
-(load! "custom.el")
