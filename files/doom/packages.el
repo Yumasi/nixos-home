@@ -7,3 +7,4 @@
 ;; (package! builtin-package :disable t)
 
 (package! exec-path-from-shell)
+(package! meson-mode)
