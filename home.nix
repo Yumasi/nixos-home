@@ -119,6 +119,23 @@ in
 
         programs.emacs.enable = true;
 
+        programs.firefox = {
+                enable = true;
+                profiles."bite" = {
+                        userChrome = ''
+                          #TabsToolbar {
+                            visibility: collapse;
+                          }
+                          #sidebar-header {
+                            visibility: collapse !important;
+                          }
+                        '';
+                        settings = {
+                                "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
+                        };
+                };
+        };
+
         programs.git = {
                 enable = true;
                 package = pkgs.gitAndTools.gitFull;
