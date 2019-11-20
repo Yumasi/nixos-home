@@ -71,6 +71,7 @@ in
                 ripgrep
                 scrot
                 sshfs
+                thefuck
                 tree
                 unzip
                 xclip

@@ -20,6 +20,7 @@ AGKOZAK_COLORS_PROMPT_CHAR='magenta'
 AGKOZAK_CUSTOM_SYMBOLS=( '⇣⇡' '⇣' '⇡' '+' 'x' '!' '>' '?' )
 AGKOZAK_MULTILINE=0
 AGKOZAK_PROMPT_CHAR=( ❯ ❯ ❮ )
+eval $(thefuck --alias)
                         '';
 
         plugins = with pkgs; [
