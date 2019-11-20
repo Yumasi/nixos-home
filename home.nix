@@ -183,7 +183,9 @@ in
                 matchBlocks = {
                         "aiur" = {
                                 hostname = "163.5.55.18";
-                                port = 43092;
+                                port = 43186;
+                                forwardX11 = true;
+                        };
                         };
                 };
 
