@@ -87,7 +87,6 @@ in
                 slack
                 spotify
                 virtmanager
-                vivaldi
                 vlc
                 wpa_supplicant_gui
 
