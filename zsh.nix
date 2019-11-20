@@ -53,6 +53,16 @@ AGKOZAK_PROMPT_CHAR=( ❯ ❯ ❮ )
                 };
                 file = "zsh-syntax-highlighting.zsh";
             }
+            {
+                name = "zsh-abbrev-alias";
+                src = fetchFromGitHub {
+                    owner = "momo-lab";
+                    repo = "zsh-abbrev-alias";
+                    rev = "637f0b2dda6d392bf710190ee472a48a20766c07";
+                    sha256 = "16saanmwpp634yc8jfdxig0ivm1gvcgpif937gbdxf0csc6vh47k";
+                };
+                file = "abbrev-alias.plugin.zsh";
+            }
         ];
     };
 
