@@ -157,6 +157,9 @@ in
                         rebase = {
                                 autoSquash = "true";
                         };
+                        github = {
+                                user = "Yumasi";
+                        };
                 };
 
                 ignores = [
