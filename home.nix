@@ -186,6 +186,10 @@ in
                                 port = 43186;
                                 forwardX11 = true;
                         };
+
+                        "multun" = {
+                          hostname = "multun.net";
+                        };
                         };
                 };
 
