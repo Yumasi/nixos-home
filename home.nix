@@ -190,6 +190,10 @@ in
                         "multun" = {
                           hostname = "multun.net";
                         };
+
+                        "build" = {
+                                hostname = "build";
+                                proxyJump = "aiur";
                         };
                 };
 
