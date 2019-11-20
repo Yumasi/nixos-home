@@ -257,6 +257,7 @@ in
 
         services.unclutter.enable = true;
 
+        home.file.".authinfo.gpg".source = ./files/pass/authinfo.gpg;
         home.file.".config/i3/config".source = ./files/i3_config;
         home.file.".config/i3/bar".source = ./files/i3status_rs + ".${settings.flavour}.toml" ;
         home.file.".config/i3/wallpaper".source = ./files/wallpaper.jpg;
