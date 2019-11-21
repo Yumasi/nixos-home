@@ -11,6 +11,7 @@
 
     extraConfig = ''
                 set cc=80
+                set number
     '';
   };
 }
