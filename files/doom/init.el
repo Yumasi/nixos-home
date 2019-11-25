@@ -14,8 +14,7 @@
 
        :completion
        (company
-        +auto
-        +childframe)
+        +auto)
        ;;helm              ; the *other* search engine for love and life
        ;;ido               ; the other *other* search engine...
        ivy                              ; a search engine for love and life
@@ -37,7 +36,7 @@
         +all                      ; catch all popups that start with an asterix
         +defaults)                ; default popup rules
        ;;pretty-code       ; replace bits of code with pretty symbols
-       ;;tabbar            ; FIXME an (incomplete) tab bar for Emacs
+       ;;tabs              ; an tab bar for Emacs
        treemacs                      ; a project drawer, like neotree but cooler
        ;;unicode           ; extended unicode support for various languages
        vc-gutter              ; vcs diff in the fringe
@@ -57,13 +56,14 @@
        parinfer ; turn lisp into python, sort of
        rotate-text               ; cycle region at point between text candidates
        snippets                  ; my elves. They type so I don't have to
+       ;;word-wrap         ; soft wrapping with language-aware indent
 
        :emacs
        (dired       ; making dired pretty [functional]
-        ;;+ranger         ; bringing the goodness of ranger to dired
         +icons                          ; colorful icons for dired-mode
         )
        electric                   ; smarter, keyword-based electric-indent
+       ibuffer           ; interactive buffer management
        vc                         ; version-control and Emacs, sitting in a tree
 
        :term
@@ -78,7 +78,7 @@
        ;;docker
        editorconfig  ; let someone else argue about tabs vs spaces
        ;;ein               ; tame Jupyter notebooks with emacs
-       eval          ; run code, run (also, repls)
+       (eval +overlay)     ; run code, run (also, repls)
        flycheck      ; tasing you for every semicolon you forget
        flyspell          ; tasing you for misspelling mispelling
        ;;gist              ; interacting with github gists
@@ -88,14 +88,13 @@
        ;;macos             ; MacOS-specific commands
        magit                    ; a git porcelain for Emacs
        make                     ; run make tasks from Emacs
-                                        ;pass               ; password manager for nerds
+       ;;pass               ; password manager for nerds
        pdf                              ; pdf enhancements
        prodigy           ; FIXME managing external services & code builders
        ;;rgb               ; creating color strings
        ;;terraform         ; infrastructure as code
        ;;tmux              ; an API for interacting with tmux
        upload            ; map local to remote projects via ssh/ftp
-       ;;wakatime
 
        :lang
        ;;agda              ; types of types of types of types...
@@ -107,15 +106,15 @@
        ;;crystal           ; ruby at the speed of c
        ;;csharp            ; unity, .NET, and mono shenanigans
        data   ; config/data formats
-       ;;erlang            ; an elegant language for a more civilized age
        ;;elixir            ; erlang done right
        ;;elm               ; care for a cup of TEA?
        emacs-lisp        ; drown in parentheses
+       ;;erlang            ; an elegant language for a more civilized age
        ;;ess               ; emacs speaks statistics
+       ;;faust             ; dsp, but you get to keep your soul
        ;;fsharp           ; ML stands for Microsoft's Language
        ;; go                ; the hipster dialect
-       ;; (haskell +intero)
-                                        ; a language that's lazier than I am
+       ;; (haskell +intero) ; a language that's lazier than I am
        ;;hy                ; readability of scheme w/ speed of python
        ;;idris             ;
        ;;(java +meghanada) ; the poster child for carpal tunnel syndrome
@@ -123,6 +122,7 @@
        ;;julia             ; a better, faster MATLAB
        ;;kotlin            ; a better, slicker Java(Script)
        latex          ; writing papers in Emacs has never been so fun
+       ;;lean
        ;;ledger            ; an accounting system in Emacs
        ;;lua               ; one-based indices? one-based indices
        markdown         ; writing docs for people to ignore
@@ -131,6 +131,7 @@
        ;;ocaml             ; an objective camel
        (org             ; organize your plain life in plain text
         +dragndrop      ; file drag & drop support
+        ;;+hugo            ; use Emacs for hugo blogging
         +ipython        ; ipython support for babel
         +pandoc         ; pandoc integration into org's exporter
         +pomodoro       ; be fruitful with the tomato technique
@@ -148,12 +149,12 @@
        ;; ruby   ; 1.step do {|i| p "Ruby is #{i.even? ? 'love' : 'life'}"}
        (rust +lsp) ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
        ;;scala             ; java, but good
+       ;;scheme            ; a fully conniving family of lisps
        sh     ; she sells (ba|z|fi)sh shells on the C xor
        ;;solidity          ; do you need a blockchain? No.
        ;;swift             ; who asked for emoji variables?
        ;;terra             ; Earth and Moon in alignment for performance.
        ;;web               ; the tubes
-       ;;vala              ; GObjective-C
 
        :email
        ;;(mu4e +gmail)       ; WIP
