@@ -38,6 +38,7 @@ in
                 ninja
                 rr
                 rustup
+                sbcl
                 vagrant
                 valgrind
 
