@@ -29,6 +29,7 @@ in
                 (lib.lowPrio clang)
                 bear
                 binutils
+                clang-tools
                 cmake
                 ctags
                 gdb
