@@ -39,7 +39,6 @@ in
                 ninja
                 rr
                 rustup
-                sbcl
                 vagrant
                 valgrind
 
@@ -47,6 +46,10 @@ in
                 acpi
                 i3lock-fancy
                 i3status-rust
+
+                # Lisp
+                sbcl
+                lispPackages.quicklisp
 
                 # Python
                 python3
