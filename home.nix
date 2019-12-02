@@ -66,6 +66,7 @@ in
                 file
                 fzf
                 htop
+                gotop
                 iftop
                 iotop
                 ldns
