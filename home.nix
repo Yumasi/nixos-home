@@ -53,6 +53,7 @@ in
 
                 # Python
                 python3
+                python3Packages.pygments
                 python3Packages.python-language-server
                 python3Packages.pyls-black
                 python3Packages.pyls-isort
