@@ -52,13 +52,18 @@ in
                 lispPackages.quicklisp
 
                 # Python
+                pipenv
                 python3
+                python3Packages.black
                 python3Packages.ipython
+                python3Packages.nose
+                python3Packages.pyflakes
                 python3Packages.pygments
-                python3Packages.python-language-server
                 python3Packages.pyls-black
                 python3Packages.pyls-isort
                 python3Packages.pyls-mypy
+                python3Packages.pytest
+                python3Packages.python-language-server
 
                 # CLI tools
                 _1password
@@ -98,6 +103,9 @@ in
                 virtmanager
                 vlc
                 wpa_supplicant_gui
+
+                # Testing
+                packer
 
                 # Emacs dependencies
                 aspell
@@ -257,7 +265,8 @@ in
         services.gpg-agent = {
                 enable = true;
                 enableSshSupport = true;
-                extraConfig = "pinentry-program ${pkgs.pinentry-qt}/bin/pinentry";
+                extraConfig = "pinentry-program ${pkgs.pinentry-qt}/bin/pinentry\n"
+                + "allow-loopback-pinentry\n";
         };
 
         services.redshift = {
