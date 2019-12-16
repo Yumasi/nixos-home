@@ -12,6 +12,7 @@
             ls = "exa";
             l = "exa -l";
             la = "exa -la";
+            ip = "ip --color=auto";
         };
 
         initExtra = ''
