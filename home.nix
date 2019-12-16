@@ -164,6 +164,9 @@ in
                         core = {
                                 whitespace = "trailing-space,space-before-tab";
                         };
+                        color = {
+                          ui = "auto";
+                        };
                         merge = {
                                 ff = "only";
                         };
