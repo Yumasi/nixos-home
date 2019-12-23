@@ -43,6 +43,7 @@
        vi-tilde-fringe        ; fringe tildes to mark beyond EOB
        window-select          ; visually switch windows
        workspaces             ; tab emulation, persistence & separate workspaces
+       zen		      ; distraction-free coding or writing
 
        :editor
        (evil +everywhere)           ; come to the dark side, we have cookies
@@ -114,7 +115,7 @@
        ;;faust             ; dsp, but you get to keep your soul
        ;;fsharp           ; ML stands for Microsoft's Language
        ;; go                ; the hipster dialect
-       ;; (haskell +intero) ; a language that's lazier than I am
+       ;; (haskell +dante) ; a language that's lazier than I am
        ;;hy                ; readability of scheme w/ speed of python
        ;;idris             ;
        ;;(java +meghanada) ; the poster child for carpal tunnel syndrome
@@ -123,6 +124,7 @@
        ;;kotlin            ; a better, slicker Java(Script)
        latex          ; writing papers in Emacs has never been so fun
        ;;lean
+       ;;factor
        ;;ledger            ; an accounting system in Emacs
        ;;lua               ; one-based indices? one-based indices
        markdown         ; writing docs for people to ignore
@@ -132,7 +134,7 @@
        (org             ; organize your plain life in plain text
         +dragndrop      ; file drag & drop support
         ;;+hugo            ; use Emacs for hugo blogging
-        +ipython        ; ipython support for babel
+        +jupyter        ; ipython/jupyter support for babel
         +pandoc         ; pandoc integration into org's exporter
         +pomodoro       ; be fruitful with the tomato technique
         +present)       ; using Emacs for presentations
