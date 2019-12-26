@@ -102,7 +102,7 @@ in
                 spotify
                 virtmanager
                 vlc
-                wpa_supplicant_gui
+                networkmanagerapplet
 
                 # Testing
                 packer

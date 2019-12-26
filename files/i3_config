@@ -5,7 +5,7 @@ font pango:Iosevka Nerd Font 8
 exec --no-startup-id feh --bg-fill ~/.config/i3/wallpaper
 exec --no-startup-id setxkbmap -option caps:escape
 exec --no-startup-id slack
-exec --no-startup-id wpa_gui -t
+exec --no-startup-id nm-applet
 exec --no-startup-id xset r rate 200 60
 
 # Window assignments

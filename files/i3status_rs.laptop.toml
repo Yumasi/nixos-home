@@ -8,13 +8,6 @@ on_collapsed_click = "spotify"
 buttons = ["play", "next"]
 
 [[block]]
-block = "net"
-device = "wlp3s0"
-ssid = true
-ip = true
-interval = 5
-
-[[block]]
 block = "battery"
 interval = 10
 device = "BAT2"
