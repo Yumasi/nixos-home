@@ -34,6 +34,7 @@ in
                 ctags
                 gdb
                 gitAndTools.tig
+                git-quick-stats
                 gnumake
                 meson
                 ninja
