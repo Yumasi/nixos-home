@@ -74,6 +74,7 @@ in
                 iotop
                 ldns
                 ltrace
+                loc
                 manpages
                 nix-index
                 nixops
