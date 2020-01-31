@@ -123,7 +123,6 @@ in
                 enable = true;
                 config = {
                         tabs = "8";
-                        theme = "TwoDark";
                 };
         };
 
