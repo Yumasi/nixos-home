@@ -306,6 +306,6 @@ in
 
         home.sessionVariables = {
                 EDITOR = "${editor}";
-                PATH = "$HOME/.config/zsh/scripts:$HOME/.emacs.d/bin:$PATH";
+                PATH = "$HOME/.config/zsh/scripts:$HOME/.emacs.d/bin:$HOME/.cargo/bin:$PATH";
         };
 }
