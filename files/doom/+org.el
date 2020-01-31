@@ -22,7 +22,16 @@
       org-directory "~/org/"
       org-log-done 'time
       deft-recursive t
-      org-latex-pdf-process '("latexmk -pdflatex='pdflatex -interaction nonstopmode' -pdf -bibtex -f %f"))
+      ;; org-latex-pdf-process '("latexmk -pdflatex='pdflatex -interaction nonstopmode' -pdf -bibtex -f %f")
+      org-latex-listings 'minted
+      org-latex-minted-options '(("frame" "lines")
+                                 ("fontsize=\\footnotesize")
+                                 ("linenos" "true"))
+      org-latex-pdf-process '("%latex -shell-escape -interaction nonstopmode -output-directory %o %f"
+                              "%latex -shell-escape -interaction nonstopmode -output-directory %o %f"
+                              "%latex -shell-escape -interaction nonstopmode -output-directory %o %f")
+      org-latex-inputenc-alist '(("utf8" . "utf8x")))
+
 
 (after! org
   (map! :map evil-org-mode-map
