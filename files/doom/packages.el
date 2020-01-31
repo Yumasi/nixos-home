@@ -8,3 +8,4 @@
 
 (package! exec-path-from-shell)
 (package! meson-mode)
+(package! bitbake)
