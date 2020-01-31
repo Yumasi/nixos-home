@@ -11,10 +11,6 @@ in
         ];
 
         home.packages = with pkgs; [
-                # ACU
-                fira
-                fira-code
-                fira-mono
                 texlive.combined.scheme-full
 
                 # WM tools
