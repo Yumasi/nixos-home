@@ -14,7 +14,7 @@
 
        :completion
        (company
-        +auto)
+        +tng)
        ;;helm              ; the *other* search engine for love and life
        ;;ido               ; the other *other* search engine...
        ivy                              ; a search engine for love and life
@@ -49,7 +49,7 @@
        (evil +everywhere)           ; come to the dark side, we have cookies
        file-templates               ; auto-snippets for empty files
        fold                         ; (nigh) universal code folding
-       format                       ; +onsave)  ; automated prettiness
+       (format +onsave)  ; automated prettiness
        ;;god
        lispy                        ; vim for lisp, for people who dont like vim
        multiple-cursors             ; editing in many places at once
@@ -69,8 +69,14 @@
 
        :term
        ;; eshell            ; a consistent, cross-platform shell (WIP)
+       shell                   ; a terminal REPL for Emacs
        term                    ; terminals in Emacs
        ;; vterm             ; another terminals in Emacs
+
+       :checkers
+       syntax              ; tasing you for every semicolon you forget
+       ;;spell             ; tasing you for misspelling mispelling
+       ;;grammar           ; tasing grammar mistake every you make
 
        :tools
        ;;ansible
@@ -80,8 +86,6 @@
        editorconfig  ; let someone else argue about tabs vs spaces
        ;;ein               ; tame Jupyter notebooks with emacs
        (eval +overlay)     ; run code, run (also, repls)
-       flycheck      ; tasing you for every semicolon you forget
-       flyspell          ; tasing you for misspelling mispelling
        ;;gist              ; interacting with github gists
        (lookup                  ; helps you navigate your code and documentation
         +docsets)               ; ...or in Dash docsets locally
@@ -171,7 +175,6 @@
        ;;irc              ; how neckbeards socialize
        ;;rss +org        ; emacs as an RSS reader
        ;;twitter           ; twitter client https://twitter.com/vnought
-       ;;(write            ; emacs as a word processor (latex + org + markdown)
        ;; +wordnut         ; wordnet (wn) search
        ;; +langtool)       ; a proofreader (grammar/style check) for Emacs
 
