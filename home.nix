@@ -209,7 +209,6 @@ in
 
                         "build" = {
                                 hostname = "build";
-                                proxyJump = "aiur";
                         };
                 };
 
