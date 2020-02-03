@@ -286,6 +286,7 @@ in {
   home.file.".doom.d/packages.el".source = ./files/doom/packages.el;
   home.file.".emacs".source = ./files/chemacs/.emacs;
   home.file.".emacs-profiles.el".source = ./files/emacs-profiles.el;
+  home.file.".spacemacs".source = ./files/spacemacs;
 
   home.sessionVariables = {
     EDITOR = "${editor}";
