@@ -4,3 +4,6 @@
 [submodule "overlays/yumasi"]
 	path = overlays/yumasi
 	url = git@github.com:Yumasi/nix-overlay.git
+[submodule "files/chemacs"]
+	path = files/chemacs
+	url = https://github.com/plexus/chemacs.git
