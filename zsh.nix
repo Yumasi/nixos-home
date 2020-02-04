@@ -16,13 +16,16 @@
     };
 
     initExtra = ''
-bindkey '^ ' autosuggest-accept
-AGKOZAK_COLORS_PROMPT_CHAR='magenta'
-AGKOZAK_CUSTOM_SYMBOLS=( '⇣⇡' '⇣' '⇡' '+' 'x' '!' '>' '?' )
-AGKOZAK_MULTILINE=0 AGKOZAK_PROMPT_CHAR=( ❯ ❯ ❮ )
-eval $(thefuck --alias)
-autopair-init
-                        '';
+      bindkey '^ ' autosuggest-accept
+      AGKOZAK_CMD_EXEC_TIME=5
+      AGKOZAK_COLORS_CMD_EXEC_TIME='yellow'
+      AGKOZAK_COLORS_PROMPT_CHAR='magenta'
+      AGKOZAK_CUSTOM_SYMBOLS=( '⇣⇡' '⇣' '⇡' '+' 'x' '!' '>' '?' )
+      AGKOZAK_MULTILINE=0
+      AGKOZAK_PROMPT_CHAR=( ❯ ❯ ❮ )
+      eval $(thefuck --alias)
+      autopair-init
+                              '';
 
     plugins = with pkgs; [
       {
@@ -30,8 +33,8 @@ autopair-init
         src = fetchFromGitHub {
           owner = "agkozak";
           repo = "agkozak-zsh-prompt";
-          rev = "v3.3.0";
-          sha256 = "0f8v1ih4205lgghcssbvb3clpymjj2f134cab5vrggdaapcs10xq";
+          rev = "v3.7.0";
+          sha256 = "1iz4l8777i52gfynzpf6yybrmics8g4i3f1xs3rqsr40bb89igrs";
         };
         file = "agkozak-zsh-prompt.plugin.zsh";
       }
