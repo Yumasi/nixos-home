@@ -98,6 +98,7 @@ in {
     pavucontrol
     slack
     spotify
+    tdesktop
     virtmanager
     vlc
     networkmanagerapplet
