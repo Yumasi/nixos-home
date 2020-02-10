@@ -76,6 +76,7 @@ in {
     ltrace
     loc
     manpages
+    megasync
     nix-index
     nixops
     nox
