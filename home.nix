@@ -15,6 +15,11 @@ in {
     # Fonts
     iosevka-nerd
 
+    # CTF Tools
+    ghidra-bin
+    python3Packages.binwalk-full
+    wireshark-qt
+
     # dev tools
     (lib.hiPrio gcc)
     (lib.lowPrio clang)
@@ -112,6 +117,9 @@ in {
 
     # Presentations tools
     screenkey
+
+    # Reverse
+    radare2
   ];
 
   programs.bat = {
