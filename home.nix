@@ -34,6 +34,7 @@ in {
     gnumake
     meson
     ninja
+    patchelf
     rr
     rustup
     vagrant
