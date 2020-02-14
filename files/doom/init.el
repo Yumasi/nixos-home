@@ -36,7 +36,7 @@
         +all                      ; catch all popups that start with an asterix
         +defaults)                ; default popup rules
        ;;pretty-code       ; replace bits of code with pretty symbols
-       ;;tabs              ; an tab bar for Emacs
+       tabs              ; an tab bar for Emacs
        treemacs                      ; a project drawer, like neotree but cooler
        ;;unicode           ; extended unicode support for various languages
        vc-gutter              ; vcs diff in the fringe
@@ -61,10 +61,10 @@
 
        :emacs
        (dired       ; making dired pretty [functional]
-        +icons                          ; colorful icons for dired-mode
+        ;;+icons                          ; colorful icons for dired-mode
         )
        electric                   ; smarter, keyword-based electric-indent
-       ibuffer           ; interactive buffer management
+       ;;ibuffer           ; interactive buffer management
        vc                         ; version-control and Emacs, sitting in a tree
 
        :term
@@ -79,10 +79,10 @@
        ;;grammar           ; tasing grammar mistake every you make
 
        :tools
-       ;;ansible
+       ansible
        debugger      ; FIXME stepping through code, to help you add bugs
        direnv
-       docker
+       (docker +lsp)
        editorconfig  ; let someone else argue about tabs vs spaces
        ;;ein               ; tame Jupyter notebooks with emacs
        (eval +overlay)     ; run code, run (also, repls)
@@ -94,7 +94,7 @@
        magit                    ; a git porcelain for Emacs
        make                     ; run make tasks from Emacs
        ;;pass               ; password manager for nerds
-       pdf                              ; pdf enhancements
+       ;;pdf                              ; pdf enhancements
        prodigy           ; FIXME managing external services & code builders
        ;;rgb               ; creating color strings
        ;;terraform         ; infrastructure as code
@@ -103,14 +103,14 @@
 
        :lang
        ;;agda              ; types of types of types of types...
-       assembly          ; assembly for fun or debugging
+       assembly            ; assembly for fun or debugging
        (cc +lsp)         ;; C/C++/Obj-C madness
        ;;clojure           ; java with a lisp
-       common-lisp       ; if you've seen one lisp, you've seen them all
+       common-lisp         ; if you've seen one lisp, you've seen them all
        ;;coq               ; proofs-as-programs
        ;;crystal           ; ruby at the speed of c
        ;;csharp            ; unity, .NET, and mono shenanigans
-       data   ; config/data formats
+       data                ; config/data formats
        ;;elixir            ; erlang done right
        ;;elm               ; care for a cup of TEA?
        emacs-lisp        ; drown in parentheses
@@ -142,7 +142,7 @@
         +pandoc         ; pandoc integration into org's exporter
         +pomodoro       ; be fruitful with the tomato technique
         +present)       ; using Emacs for presentations
-       perl             ; write code no one else can comprehend
+       ;;perl             ; write code no one else can comprehend
        ;;php               ; perl's insecure younger brother
        ;;plantuml          ; diagrams for confusing people more
        ;;purescript        ; javascript, but functional
@@ -151,7 +151,7 @@
         +ipython)     ; beautiful is better than ugly
        ;;qt                ; the 'cutest' gui framework ever
        ;; racket ; a DSL for DSLs
-       rest ; Emacs as a REST client
+       ;;rest ; Emacs as a REST client
        ;; ruby   ; 1.step do {|i| p "Ruby is #{i.even? ? 'love' : 'life'}"}
        (rust +lsp) ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
        ;;scala             ; java, but good
