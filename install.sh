@@ -106,4 +106,3 @@ get_creds() {
 link_config
 get_creds
 update_submodules
-setup_project_dir
